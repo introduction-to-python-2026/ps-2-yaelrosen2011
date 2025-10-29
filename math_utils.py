@@ -16,7 +16,6 @@ def find_mean_std(num1, num2, num3):
     mean_num1=(num1-mean)**2
     mean_num2=(num2-mean)**2
     mean_num3=(num3-mean)**2
-    mean_of_all=(mean_num1+mean_num2+mean_num3)/3
-    std=math.sqrt(mean_of_all)
+    std=((mean_num1+mean_num2+mean_num3)/3)**0.5
     return std
 
