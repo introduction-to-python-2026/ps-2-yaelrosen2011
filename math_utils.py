@@ -1,3 +1,4 @@
+import math
 def find_max_number(num1, num2, num3):
     if num1>num2 and num1>num3:
         return num1
@@ -15,6 +16,7 @@ def find_mean_std(num1, num2, num3):
     mean_num1=(num1-mean)**2
     mean_num2=(num2-mean)**2
     mean_num3=(num3-mean)**2
-    std=(mean_num1+mean_num2+mean_num3)/3
+    mean_of_all=(mean_num1+mean_num2+mean_num3)/3
+    std=math.sqrt(mean_of_all)
     return std
 
